@@ -1,0 +1,10 @@
+^E:\GAMES\C\BLOODBATH\RAYLIB\SRC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Games/C/BloodBath -BE:/Games/C/BloodBath/build --check-stamp-file E:/Games/C/BloodBath/build/raylib/raylib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

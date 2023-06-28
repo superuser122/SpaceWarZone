@@ -1,0 +1,15 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.24/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/CheckCCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/Internal/CheckCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/Internal/CheckFlagCommonConfig.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake
+E:/Games/C/BloodBath/build/CMakeFiles/cmake.verify_globs
+E:/Games/C/BloodBath/raylib/CMakeLists.txt
+E:/Games/C/BloodBath/raylib/CMakeOptions.txt
+E:/Games/C/BloodBath/raylib/cmake/AddIfFlagCompiles.cmake
+E:/Games/C/BloodBath/raylib/cmake/BuildOptions.cmake
+E:/Games/C/BloodBath/raylib/cmake/CompilerFlags.cmake
+E:/Games/C/BloodBath/raylib/cmake/EnumOption.cmake

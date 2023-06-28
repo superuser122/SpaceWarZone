@@ -1,0 +1,20 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.24/Modules/CPack.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/CPackComponent.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/FindOpenGL.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.24/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-3.24/Templates/CPackConfig.cmake.in
+E:/Games/C/BloodBath/build/CMakeFiles/cmake.verify_globs
+E:/Games/C/BloodBath/raylib/cmake/CompileDefinitions.cmake
+E:/Games/C/BloodBath/raylib/cmake/GlfwImport.cmake
+E:/Games/C/BloodBath/raylib/cmake/InstallConfigurations.cmake
+E:/Games/C/BloodBath/raylib/cmake/JoinPaths.cmake
+E:/Games/C/BloodBath/raylib/cmake/LibraryConfigurations.cmake
+E:/Games/C/BloodBath/raylib/cmake/LibraryPathToLinkerFlags.cmake
+E:/Games/C/BloodBath/raylib/cmake/PackConfigurations.cmake
+E:/Games/C/BloodBath/raylib/cmake/PopulateConfigVariablesLocally.cmake
+E:/Games/C/BloodBath/raylib/cmake/raylib-config-version.cmake
+E:/Games/C/BloodBath/raylib/raylib.pc.in
+E:/Games/C/BloodBath/raylib/src/CMakeLists.txt
