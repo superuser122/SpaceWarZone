@@ -5,7 +5,6 @@
 
 typedef struct MainMenu{
    GameState *state;
-   bool initiliazed;
    Texture2D background;
 } MainMenu;
 
@@ -16,6 +15,5 @@ void main_menu_setup(MainMenu *menu, GameState *state);
 void main_menu_update(MainMenu *menu);
 
 void main_menu_render(MainMenu *menu);
-
 
 #endif

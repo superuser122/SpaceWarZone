@@ -2,7 +2,7 @@
 
 void run_game(GameApp *game){
 
-    InitWindow(game->settings->screenWidth, game->settings->screenHeight, "Amazing Game");
+    InitWindow(game->settings->screen_width, game->settings->screen_height, "Amazing Game");
 
     SetTargetFPS(60);              
     while (!WindowShouldClose()){
@@ -10,10 +10,10 @@ void run_game(GameApp *game){
         BeginDrawing();
         switch (game->game_state){
             case SPLASH:
-                splash_screen(&game_state, &splash_life_time);
+                splash_screen_run(&game->splash_screen, &game->game_state);
                 break;
             case MAIN_MENU:
-                run_main_menu(&main_menu, &game_state);
+                run_main_menu(&game->main_menu, &game->game_state);
                 break;
             case LEVEL_ONE:
                 break;

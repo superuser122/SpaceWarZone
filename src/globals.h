@@ -1,5 +1,6 @@
 #ifndef GLOBALS_H
 #define GLOBALS_H
+#include <stdlib.h>
 
 typedef enum GameState{
     SPLASH,

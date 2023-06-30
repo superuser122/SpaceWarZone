@@ -4,6 +4,15 @@
 #include "raylib.h"
 #include "globals.h"
 
-void splash_screen(GameState *state, float* splash_life_time);
+typedef struct{
+    GameState *state;
+    Texture2D logo;
+    float splash_lifetime;
+
+} SplashScreen;
+
+
+
+void splash_screen(SplashScreen **splash_screen, GameState *state);
 
 #endif
