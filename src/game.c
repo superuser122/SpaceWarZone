@@ -6,16 +6,17 @@ void run_game(GameApp *game){
 
     SetTargetFPS(60);              
     while (!WindowShouldClose()){
-        ClearBackground(RAYWHITE);
         BeginDrawing();
+        ClearBackground(RAYWHITE);
         switch (game->game_state){
             case SPLASH:
                 splash_screen_run(&game->splash_screen, &game->game_state);
                 break;
             case MAIN_MENU:
-                run_main_menu(&game->main_menu, &game->game_state);
+                main_menu_run(&game->main_menu, &game->game_state);
                 break;
             case LEVEL_ONE:
+                level_one_run(&game->game_state);
                 break;
             case PAUSE:
                 break;

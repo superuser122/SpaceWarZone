@@ -1,6 +1,7 @@
 #include "main_menu.h"
 
-void run_main_menu(MainMenu **menu, GameState *state){
+void main_menu_run(MainMenu **menu, GameState *state){
+    //Setup. Run the first time
     if(*menu == NULL){
         *menu = (MainMenu*)malloc(sizeof(MainMenu));
         (*menu)->state = state;
@@ -14,6 +15,9 @@ void run_main_menu(MainMenu **menu, GameState *state){
 
 
 void main_menu_update(MainMenu *menu){
+    if (IsKeyDown(KEY_ENTER)){
+        *menu->state = LEVEL_ONE;
+    }
     
 }
 

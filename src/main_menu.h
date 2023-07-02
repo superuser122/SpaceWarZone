@@ -8,9 +8,7 @@ typedef struct MainMenu{
    Texture2D background;
 } MainMenu;
 
-void run_main_menu(MainMenu *menu, GameState *state);
-
-void main_menu_setup(MainMenu *menu, GameState *state);
+void main_menu_run(MainMenu *menu, GameState *state);
 
 void main_menu_update(MainMenu *menu);
 

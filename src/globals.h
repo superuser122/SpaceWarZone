@@ -2,7 +2,7 @@
 #define GLOBALS_H
 #include <stdlib.h>
 
-typedef enum GameState{
+typedef enum {
     SPLASH,
     MAIN_MENU,
     LEVEL_ONE,
