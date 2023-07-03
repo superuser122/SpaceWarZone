@@ -1,9 +1,5 @@
 #include "splash_screen.h"
 
-
-
-
-
 void splash_screen_run(SplashScreen **splash_screen){
 
     if(*splash_screen == NULL){
