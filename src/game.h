@@ -8,7 +8,6 @@
 #include "level_one.h"
 
 typedef struct {
-    GameState game_state;
     GameSettings *settings;
     SplashScreen *splash_screen;
     MainMenu *main_menu;

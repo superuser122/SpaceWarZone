@@ -4,7 +4,7 @@
 
 
 
-void splash_screen_run(SplashScreen **splash_screen, GameState *state){
+void splash_screen_run(SplashScreen **splash_screen){
 
     if(*splash_screen == NULL){
         *splash_screen = (SplashScreen*)malloc(sizeof(SplashScreen));
@@ -13,7 +13,7 @@ void splash_screen_run(SplashScreen **splash_screen, GameState *state){
     }
 
     if((*splash_screen)->splash_lifetime < 0){
-        *state = MAIN_MENU;
+        game_state_glob = MAIN_MENU;
         free((*splash_screen));
         return;
     }

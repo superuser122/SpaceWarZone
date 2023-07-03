@@ -1,10 +1,9 @@
 #include "main_menu.h"
 
-void main_menu_run(MainMenu **menu, GameState *state){
+void main_menu_run(MainMenu **menu){
     //Setup. Run the first time
     if(*menu == NULL){
         *menu = (MainMenu*)malloc(sizeof(MainMenu));
-        (*menu)->state = state;
         (*menu)->background = LoadTexture("assets/menu.png"); 
         return;
     }
@@ -16,7 +15,7 @@ void main_menu_run(MainMenu **menu, GameState *state){
 
 void main_menu_update(MainMenu *menu){
     if (IsKeyDown(KEY_ENTER)){
-        *menu->state = LEVEL_ONE;
+        game_state_glob = LEVEL_ONE;
     }
     
 }

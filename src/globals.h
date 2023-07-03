@@ -8,7 +8,7 @@ typedef enum {
     LEVEL_ONE,
     PAUSE,
 } GameState;
-
-
+ 
+GameState game_state_glob;
 
 #endif

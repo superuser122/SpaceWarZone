@@ -4,11 +4,10 @@
 #include "globals.h"
 
 typedef struct MainMenu{
-   GameState *state;
    Texture2D background;
 } MainMenu;
 
-void main_menu_run(MainMenu *menu, GameState *state);
+void run_main_menu(MainMenu *menu);
 
 void main_menu_update(MainMenu *menu);
 

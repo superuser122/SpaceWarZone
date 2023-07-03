@@ -8,15 +8,15 @@ void run_game(GameApp *game){
     while (!WindowShouldClose()){
         BeginDrawing();
         ClearBackground(RAYWHITE);
-        switch (game->game_state){
+        switch (game_state_glob){
             case SPLASH:
-                splash_screen_run(&game->splash_screen, &game->game_state);
+                splash_screen_run(&game->splash_screen);
                 break;
             case MAIN_MENU:
-                main_menu_run(&game->main_menu, &game->game_state);
+                main_menu_run(&game->main_menu);
                 break;
             case LEVEL_ONE:
-                level_one_run(&game->game_state);
+                level_one_run();
                 break;
             case PAUSE:
                 break;

@@ -22,7 +22,6 @@ int main(void){
     // };
 
     GameApp *game = (GameApp*)malloc(sizeof(GameApp));
-    game->game_state = SPLASH;
     game->settings = settings;
     game->main_menu = NULL;
     game->splash_screen = NULL;

@@ -5,7 +5,6 @@
 #include "globals.h"
 
 typedef struct{
-    GameState *state;
     Texture2D logo;
     float splash_lifetime;
 
@@ -13,6 +12,6 @@ typedef struct{
 
 
 
-void splash_screen(SplashScreen **splash_screen, GameState *state);
+void splash_screen(SplashScreen **splash_screen);
 
 #endif

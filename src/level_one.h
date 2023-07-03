@@ -5,10 +5,9 @@
 #include "globals.h"
 
 typedef struct {
-    GameState *state;
     Player *player;
 } LevelOne;
 
-void level_one_run(GameState *state);
+void level_one_run();
 
 #endif
