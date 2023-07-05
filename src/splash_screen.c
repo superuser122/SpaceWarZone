@@ -10,6 +10,7 @@ void splash_screen_run(SplashScreen **splash_screen){
 
     if((*splash_screen)->splash_lifetime < 0){
         game_state_glob = MAIN_MENU;
+        UnloadTexture((*splash_screen)->logo);
         free((*splash_screen));
         return;
     }

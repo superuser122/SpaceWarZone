@@ -6,8 +6,11 @@
 
 typedef struct {
     Player *player;
+    Texture2D background;
 } LevelOne;
 
-void level_one_run();
+void level_one_run(LevelOne **level_one);
+
+void level_one_render(LevelOne *level_one);
 
 #endif

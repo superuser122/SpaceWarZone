@@ -12,8 +12,8 @@ int main(void){
         printf("Memory allocation failed!\n");
         return 1;
     }
-    settings->screen_width = 800;
-    settings->screen_height = 600;
+    settings->screen_width = 1280;
+    settings->screen_height = 720;
 
     GameApp game = {
         .settings = settings,
