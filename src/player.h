@@ -5,7 +5,15 @@
 typedef struct {
     Texture2D texture;
     Rectangle body_collider;
+    Vector2 position;
+    float speed;
     int health;
 } Player;
+
+void player_render(Player *self);
+
+void player_update(Player *self);
+
+void player_move(Player *self);
 
 #endif

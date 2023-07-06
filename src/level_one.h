@@ -9,8 +9,10 @@ typedef struct {
     Texture2D background;
 } LevelOne;
 
-void level_one_run(LevelOne **level_one);
+void level_one_run(LevelOne **level_one, Player *player);
 
 void level_one_render(LevelOne *level_one);
+
+void level_one_update(LevelOne *level_one);
 
 #endif
