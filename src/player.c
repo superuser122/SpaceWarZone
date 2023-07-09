@@ -29,3 +29,34 @@ void player_move(Player *self){
     self->position.y += direction.y * self->speed * deltaTime;
 
 }
+
+void player_shoot(Player *self,Bullet bullets[]){
+
+    if (IsKeyPressed(KEY_SPACE)){
+        for(size_t i = 0; i < 100; i++ ){
+            if(!bullets[i].active){
+                bullets[i].position.x = self->position.x + (float)self->texture.width / 2 ;
+                bullets[i].position.y = self->position.y + (float)self->texture.height / 2;
+                bullets[i].speed = 1000;
+                bullets[i].type = NORMAL;
+                bullets[i].velocity.x = 1;
+                bullets[i].velocity.y = 2;
+                bullets[i].active = true;
+                return;
+            }
+        }
+        // Bullet bullet = {
+        //     .position = { 
+        //         .x = self->position.x ,
+        //         .y = self->position.y
+        //     },
+        //     .speed = 1000,
+        //     .type = NORMAL,
+        //     .velocity = { 
+        //         .x = 1,
+        //         .y = 0
+        //     } 
+        // };
+        // bullets[0] = bullet;
+    }
+}

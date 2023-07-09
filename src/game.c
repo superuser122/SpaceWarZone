@@ -23,7 +23,7 @@ void run_game(GameApp *game){
                 main_menu_run(&game->main_menu);
                 break;
             case LEVEL_ONE:
-                level_one_run(&game->level_one, player);
+                level_one_run(&game->level_one, player, game->settings);
                 break;
             case PAUSE:
                 break;
