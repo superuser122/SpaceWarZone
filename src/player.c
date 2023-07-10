@@ -45,18 +45,6 @@ void player_shoot(Player *self,Bullet bullets[]){
                 return;
             }
         }
-        // Bullet bullet = {
-        //     .position = { 
-        //         .x = self->position.x ,
-        //         .y = self->position.y
-        //     },
-        //     .speed = 1000,
-        //     .type = NORMAL,
-        //     .velocity = { 
-        //         .x = 1,
-        //         .y = 0
-        //     } 
-        // };
-        // bullets[0] = bullet;
+
     }
 }

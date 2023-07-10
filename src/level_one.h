@@ -13,7 +13,7 @@ typedef struct {
     Player *player;
     Texture2D background;
     Bullet bullets[100];
-    Stars stars[100];
+    Star stars[100];
     GameSettings *settings;
 } LevelOne;
 
