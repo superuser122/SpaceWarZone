@@ -8,8 +8,10 @@ void level_one_run(LevelOne **self, Player *player, GameSettings *settings){
         (*self)->player = player;
         (*self)->settings = settings;
         (*self)->background = LoadTexture("assets/level_one_bg.png");
+        Texture2D bullet_sprite = LoadTexture("assets/bullet.png");
         for(size_t i = 0; i < 100; i++){
             (*self)->bullets[i].active = false;
+            (*self)->bullets[i].sprite = bullet_sprite;
             (*self)->stars[i].position.x =  (float)GetRandomValue(0, settings->screen_width);
             (*self)->stars[i].position.y =  (float)GetRandomValue(0, settings->screen_height);
             (*self)->stars[i].size =  (float)GetRandomValue(3, 1);

@@ -13,6 +13,7 @@ typedef struct {
     float speed;
     BulletType type;
     bool active;
+    Texture2D sprite;
     
 } Bullet;
 
