@@ -1,6 +1,6 @@
 cmake_minimum_required (VERSION 3.16)
 
-project("BloodBath")
+project("SpaceWarZone")
 
 # Automatically pick up files added to src
 file(GLOB_RECURSE HEADER_FILES ${CMAKE_CURRENT_SOURCE_DIR}/src/*.h)
