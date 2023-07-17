@@ -1,12 +1,12 @@
 #include "enemy.h"
 
 // Function to insert a new node at the end of the linked list
-void insertAtEnd(Node** head, int data){
+void enemy_node_insert(EnemyNode** head, Enemy enemy){
     // Create a new node
-    Node *newNode = (Node*)malloc(sizeof(Node));
+    EnemyNode *newNode = (EnemyNode*)malloc(sizeof(EnemyNode));
 
     // Set data and next pointer
-    newNode->data = data;
+    newNode->enemy = enemy;
     newNode->next = NULL;
 
     // If the list is empty, make the new node as the head
@@ -17,7 +17,7 @@ void insertAtEnd(Node** head, int data){
     }
 
     // Find the last node
-    Node* lastNode = *head;
+    EnemyNode* lastNode = *head;
     while (lastNode->next != NULL) {
         lastNode = lastNode->next;
     }
