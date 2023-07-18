@@ -6,6 +6,7 @@
 #include "bullet.h"
 #include "settings.h"
 #include "stars.h"
+#include "timer.h"
 
 #define LEVEL_ONE_MAX_BULLETS 100;
 
@@ -15,6 +16,7 @@ typedef struct {
     Bullet bullets[100];
     Star stars[100];
     GameSettings *settings;
+    Timer timer;
 } LevelOne;
 
 void level_one_run(LevelOne **level_one, Player *player, GameSettings *settings);

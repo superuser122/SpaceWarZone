@@ -8,6 +8,7 @@ void level_one_run(LevelOne **self, Player *player, GameSettings *settings){
         (*self)->player = player;
         (*self)->settings = settings;
         (*self)->background = LoadTexture("assets/level_one_bg.png");
+        timer_start(&(*self)->timer, 600);
         Texture2D bullet_sprite = LoadTexture("assets/bullet.png");
         for(size_t i = 0; i < 100; i++){
             (*self)->bullets[i].active = false;
@@ -44,6 +45,7 @@ void level_one_render(LevelOne *self){
 }
 
 void level_one_update(LevelOne *self){
+    timer_update(&self->timer);
     player_update(self->player);
     player_shoot(self->player, self->bullets);
     for(size_t i = 0; i < 100; i++){
@@ -52,5 +54,9 @@ void level_one_update(LevelOne *self){
         bullet_render(&self->bullets[i]);
     }
 
+
+    if(self->timer.life_time < 120){
+
+    }
     
 }

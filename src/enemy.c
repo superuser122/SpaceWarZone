@@ -3,26 +3,26 @@
 // Function to insert a new node at the end of the linked list
 void enemy_node_insert(EnemyNode** head, Enemy enemy){
     // Create a new node
-    EnemyNode *newNode = (EnemyNode*)malloc(sizeof(EnemyNode));
+    EnemyNode *new_node = (EnemyNode*)malloc(sizeof(EnemyNode));
 
     // Set data and next pointer
-    newNode->enemy = enemy;
-    newNode->next = NULL;
+    new_node->enemy = enemy;
+    new_node->next = NULL;
 
     // If the list is empty, make the new node as the head
     if (*head == NULL) {
-        newNode->prev = NULL;
-        *head = newNode;
+        new_node->prev = NULL;
+        *head = new_node;
         return;
     }
 
     // Find the last node
-    EnemyNode* lastNode = *head;
-    while (lastNode->next != NULL) {
-        lastNode = lastNode->next;
+    EnemyNode* last_node = *head;
+    while (last_node->next != NULL) {
+        last_node = last_node->next;
     }
 
     // Set the new node as the last node
-    lastNode->next = newNode;
-    newNode->prev = lastNode;
+    last_node->next = new_node;
+    new_node->prev = last_node;
 }
