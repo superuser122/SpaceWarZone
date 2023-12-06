@@ -12,6 +12,7 @@ typedef struct {
     SplashScreen *splash_screen;
     MainMenu *main_menu;
     LevelOne *level_one;
+    GameState game_state;
 } GameApp;
 
 void run_game(GameApp *game);

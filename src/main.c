@@ -18,7 +18,8 @@ int main(void){
     GameApp game = {
         .settings = settings,
         .main_menu = NULL,
-        .splash_screen = NULL
+        .splash_screen = NULL,
+        .game_state = SPLASH,
     };
 
     // GameApp *game = (GameApp*)malloc(sizeof(GameApp));

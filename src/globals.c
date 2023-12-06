@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <time.h>
 
+game_state_glob = SPLASH;
 
 int get_random_between(int from, int till){
     // Seed the random number generator

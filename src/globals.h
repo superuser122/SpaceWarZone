@@ -10,9 +10,6 @@ typedef enum {
     PAUSE,
 } GameState;
  
-GameState game_state_glob = SPLASH;
-
-
 int get_random_between(int from, int till);
 
 #endif

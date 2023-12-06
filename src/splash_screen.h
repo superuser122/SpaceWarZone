@@ -12,6 +12,6 @@ typedef struct{
 
 
 
-void splash_screen_run(SplashScreen **splash_screen);
+void splash_screen_run(SplashScreen **splash_screen, GameState *game_state);
 
 #endif
