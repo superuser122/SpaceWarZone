@@ -33,7 +33,7 @@ void player_move(Player *self){
 void player_shoot(Player *self,Bullet bullets[]){
 
     if (IsKeyPressed(KEY_SPACE)){
-        for(size_t i = 0; i < 100; i++ ){
+        for(int i = 0; i < 100; i++ ){
             if(!bullets[i].active){
                 bullets[i].position.x = self->position.x + (float)self->texture.width / 2 ;
                 bullets[i].position.y = self->position.y + (float)self->texture.height / 2;
