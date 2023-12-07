@@ -1,4 +1,8 @@
 #include "level_one.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <unistd.h>
 
 void level_one_run(LevelOne **self, Player *player, GameSettings *settings){
     //Setup. Run the first time
@@ -65,14 +69,14 @@ void level_one_update(LevelOne *self){
     }
 
 
-    if(self->timer.life_time > 480 && self->timer.life_time < 590){
+    if(self->timer.life_time > 180 && self->timer.life_time < 290){
         printf("time to spawn enemies---------------------------------------------------------------------");
         if( self->enemies == NULL ){
             //Texture2D scout_sprite = LoadTexture("assets/scout_lvl1.png");
             for(size_t i = 0; i < 10; i++){
                 Enemy enemy = {0};
                 enemy.position.x = 1280 + i * 50;
-                enemy.position.y = 100 + i * 50;
+                enemy.position.y = 360;
                 enemy.body_collider.height = 35;
                 enemy.body_collider.width = 77;
                 enemy.body_collider.x = 25;
@@ -87,7 +91,9 @@ void level_one_update(LevelOne *self){
         }else{
             EnemyNode *current = self->enemies;
             while (current != NULL){
-                current->enemy.position.x -= 300 * GetFrameTime();
+                current->enemy.position.x -= 100 * sin(GetFrameTime());
+                // Update the y-coordinate based on a quadratic function
+                current->enemy.position.y = 5.0 + 2.0 * pow(current->enemy.position.x - 10.0, 2) / 100.0;
                 current = current->next;
             }
 
