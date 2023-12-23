@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include <unistd.h>
 
 void level_one_run(LevelOne **self, Player *player, GameSettings *settings){
     //Setup. Run the first time
